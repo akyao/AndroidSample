@@ -1,6 +1,7 @@
-package jp.ne.akyao.test.testContacts;
+package jp.ne.akyao.test;
 
 
+import jp.ne.akyao.test.testContacts.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
