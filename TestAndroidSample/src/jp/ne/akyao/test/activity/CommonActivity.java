@@ -27,6 +27,9 @@ public abstract class CommonActivity extends Activity {
 		case R.id.button:
 			startActivity(ButtonActivity.class);
 			break;
+		case R.id.wegImage:
+			startActivity(WebImageActivity.class);
+			break;
 		}
 		
 		return super.onOptionsItemSelected(item);

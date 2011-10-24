@@ -3,5 +3,7 @@
 	    android:title="Contacts"/>
 	<item android:id="@+id/button"
         android:title="Button"/>
+    <item android:id="@+id/wegImage"
+        android:title="WegImage"/>
     
 </menu>
