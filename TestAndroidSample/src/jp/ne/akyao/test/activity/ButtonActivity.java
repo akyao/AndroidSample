@@ -18,7 +18,7 @@ public class ButtonActivity extends CommonActivity {
         button.setOnClickListener(new MyOnclickListener());
     }
     
-    private  class MyOnclickListener implements OnClickListener{
+    private class MyOnclickListener implements OnClickListener{
     	@Override
     	public void onClick(View v) {
     		Toast.makeText(ButtonActivity.this, "Clicked", Toast.LENGTH_SHORT);    	

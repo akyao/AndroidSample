@@ -32,6 +32,9 @@
         <activity android:name=".activity.GoogleMapActivity"
                   android:label="GoogleMapActivity">
         </activity>
+        <activity android:name=".activity.TabActivity"
+                  android:label="TabActivity">
+        </activity>
         
         <receiver android:name=".widget.EmptyWidget">
             <intent-filter>

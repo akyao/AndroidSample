@@ -22,6 +22,7 @@ public class EntranceActivity extends Activity {
 		add(new OreValuePair("Contacts", ContactsActivity.class));
 		add(new OreValuePair("GoogleMap", GoogleMapActivity.class));
 		add(new OreValuePair("WebImage", WebImageActivity.class));
+		add(new OreValuePair("Tab", TabActivity.class));
 	}};
 	
     @Override
