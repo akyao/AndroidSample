@@ -2,6 +2,7 @@ package jp.ne.akyao.test.activity;
 
 
 import jp.ne.akyao.test.R;
+import android.app.Activity;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,7 +10,7 @@ import android.provider.ContactsContract;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class ContactsActivity extends CommonActivity {
+public class ContactsActivity extends Activity {
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
