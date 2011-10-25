@@ -24,21 +24,15 @@ public class TabActivity extends android.app.TabActivity {
         inflater.inflate(R.layout.tab_content2, tabHost.getTabContentView(), true);
         inflater.inflate(R.layout.tab_content3, tabHost.getTabContentView(), true);
         
-        TabSpec tab1 = tabHost.newTabSpec("tab1");
-        tab1.setIndicator("tab1 Label");
-        tab1.setContent(R.id.tabContent1);
-        
-        TabSpec tab2 = tabHost.newTabSpec("tab2");
-        tab2.setIndicator("tab2 Label");
-        tab2.setContent(R.id.tabContent2);
-        
-        TabSpec tab3 = tabHost.newTabSpec("tab3");
-        tab3.setIndicator("tab3 Label");
-        tab3.setContent(R.id.tabContent3);
-        
-        tabHost.addTab(tab1);
-        tabHost.addTab(tab2);
-        tabHost.addTab(tab3);
-        
+        tabHost.addTab(createTabSpec(tabHost, "tab1", "tab1 Label", R.id.tabContent1));
+        tabHost.addTab(createTabSpec(tabHost, "tab2", "tab2 Label", R.id.tabContent2));
+        tabHost.addTab(createTabSpec(tabHost, "tab3", "tab3 Label", R.id.tabContent3));
+    }
+    
+    private TabSpec createTabSpec(TabHost tabHost, String tabName, String tabLabel, int content){
+    	TabSpec spec = tabHost.newTabSpec(tabName);
+    	spec.setIndicator(tabLabel);
+    	spec.setContent(content);
+    	return spec;
     }
 }
