@@ -35,6 +35,9 @@
         <activity android:name=".activity.TabActivity"
                   android:label="TabActivity">
         </activity>
+        <activity android:name=".activity.AudioPlayerActivity"
+                  android:label="AudioPlayerActivity">
+        </activity>
         
         <receiver android:name=".widget.EmptyWidget">
             <intent-filter>
